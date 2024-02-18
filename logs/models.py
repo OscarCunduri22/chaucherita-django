@@ -30,4 +30,4 @@ class SessionLog(models.Model):
     logout_time = models.DateTimeField(null=True, blank=True)
 
     def __str__(self):
-        return f"User: {self.user}, Login Time: {self.login_time}, Logout Time: {self.logout_time}"
+        return f"User: {self.user_id}, Username: {self.user_username}, Login Time: {self.login_time}, Logout Time: {self.logout_time}"
